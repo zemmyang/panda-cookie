@@ -1,6 +1,6 @@
 ## Panda Cookie Jekyll Theme
 
-This project was forked from [agusmakmun.github.io](https://github.com/agusmakmun/agusmakmun.github.io), which was forked and modified from [A simple grey theme for Jekyll](https://github.com/liamsymonds/simplygrey-jekyll) with the search box powered by [Super Search](https://github.com/chinchang/super-search).
+This project was forked and modified from [agusmakmun.github.io](https://github.com/agusmakmun/agusmakmun.github.io), which was forked and modified from [A simple grey theme for Jekyll](https://github.com/liamsymonds/simplygrey-jekyll) with the search box powered by [Super Search](https://github.com/chinchang/super-search).
 
 ### Demo
 
@@ -9,7 +9,7 @@ see later
 #### Features
 
 New features:
-* Fixed several problems from the original
+* Fixed the baseurl issue from the original
 * Dark mode toggle
 * MathJax support
 
