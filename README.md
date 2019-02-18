@@ -1,13 +1,19 @@
-## My Stack Problems
+## Panda Cookie Jekyll Theme
 
-> This project forked and has been modified from [A simple grey theme for Jekyll](https://github.com/liamsymonds/simplygrey-jekyll),
-> and the search posts using [Super Search](https://github.com/chinchang/super-search)
+This project was forked from [agusmakmun.github.io](https://github.com/agusmakmun/agusmakmun.github.io), which was forked and modified from [A simple grey theme for Jekyll](https://github.com/liamsymonds/simplygrey-jekyll) with the search box powered by [Super Search](https://github.com/chinchang/super-search).
 
 ### Demo
-* [https://agusmakmun.github.io](https://agusmakmun.github.io)
+
+see later
 
 #### Features
 
+New features:
+* Fixed several problems from the original
+* Dark mode toggle
+* MathJax support
+
+From [agusmakmun.github.io](https://github.com/agusmakmun/agusmakmun.github.io):
 * Sitemap and XML Feed
 * Pagination in homepage
 * Posts under category
@@ -23,7 +29,7 @@
 
 #### Screenshot
 
-![Screenshot Post Page](https://raw.githubusercontent.com/agusmakmun/agusmakmun.github.io/master/static/img/screenshot-post-page.png  "Screenshot Post Page")
+see later
 
 ### Install & Configuration
 
@@ -66,7 +72,3 @@ image: Broadcast_Mail.png             # (custom) image only for meta `property="
 
 # your content post with markdown syntax goes here...
 ```
-
-### Contributing
-
-Feel free to [open a bug](https://github.com/agusmakmun/agusmakmun.github.io/issues) or [contribute to code](https://github.com/agusmakmun/agusmakmun.github.io/pulls)!
