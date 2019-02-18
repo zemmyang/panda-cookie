@@ -2,6 +2,8 @@
     Author: Kushagra Gour (http://kushagragour.in)
     MIT Licensed
 */
+---
+---
 
 (function () {
     var isSearchOpen = false,
@@ -63,7 +65,7 @@
     }
 
     var xmlhttp=new XMLHttpRequest();
-    xmlhttp.open("GET","/sitemap.xml");
+    xmlhttp.open("GET","{{ site.baseurl }}/sitemap.xml");
     xmlhttp.onreadystatechange = function () {
         if (xmlhttp.readyState != 4) return;
         if (xmlhttp.status != 200 && xmlhttp.status != 304) { return; }
