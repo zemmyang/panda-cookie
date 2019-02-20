@@ -72,3 +72,7 @@ image: Broadcast_Mail.png             # (custom) image only for meta `property="
 
 # your content post with markdown syntax goes here...
 ```
+
+### Credits
+
+[Panda Photo](https://unsplash.com/photos/94c2BwxqwXw) by Elena Loshina on Unsplash
