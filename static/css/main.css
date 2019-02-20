@@ -40,6 +40,9 @@ a:hover {
   color: #B3B3B3;
   text-decoration: underline;
 }
+a:focus {
+  color: #a7443f;
+}
 
 /* Layout */
 .main-layout {
