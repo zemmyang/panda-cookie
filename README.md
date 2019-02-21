@@ -32,7 +32,7 @@ From [agusmakmun.github.io](https://github.com/agusmakmun/agusmakmun.github.io):
 
 #### Screenshot
 
-https://user-images.githubusercontent.com/1752285/53180678-c5eb2c80-35fe-11e9-87b7-9ce10cfb75bc.png
+![screenshot](https://user-images.githubusercontent.com/1752285/53180678-c5eb2c80-35fe-11e9-87b7-9ce10cfb75bc.png)
 
 ### Install & Configuration
 
