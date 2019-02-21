@@ -4,7 +4,7 @@ This project was forked and modified from [agusmakmun.github.io](https://github.
 
 ### Demo
 
-see later
+see: https://zemmyang.github.io/panda-cookie/
 
 #### Features
 
@@ -32,7 +32,7 @@ From [agusmakmun.github.io](https://github.com/agusmakmun/agusmakmun.github.io):
 
 #### Screenshot
 
-see later
+https://user-images.githubusercontent.com/1752285/53180678-c5eb2c80-35fe-11e9-87b7-9ce10cfb75bc.png
 
 ### Install & Configuration
 
