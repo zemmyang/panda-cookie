@@ -11,6 +11,8 @@ layout: default
     &raquo; {% for category in page.categories %}<a href="{{ site.baseurl }}/category/{{ category }}">{{ category }}</a>{% if forloop.last == false %}, {% endif %}{% endfor %}
   </span>
 {% endif %}
+<span class="permalinklink"> || <a href="{{ site.baseurl}}{{ page.url }}"> permalink </a> </span>
+
 
 <div class="content">
   <div class="post">{{ content }}</div>
@@ -29,7 +31,7 @@ layout: default
               <ul>
             {% endif %}
                 <li class="relatedPost">
-                  <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+                  <a href="{{ site.baseurl}}{{ site.url }}{{ post.url }}">{{ post.title }}</a>
                   {% if post.categories %}
                     (Categories: {% for category in post.categories %}<a href="/category/{{ category }}">{{ category }}</a>{% if forloop.last == false %}, {% endif %}{% endfor %})
                   {% endif %}
