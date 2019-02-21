@@ -1,0 +1,70 @@
+---
+---
+
+body {
+  background-color: #000;
+  background: url("{{ site.baseurl }}/static/img/subtle_dots_dark.png");
+}
+
+hr {
+  border-top: 1px solid #F7F1F1;
+  border-bottom: 1px solid #fff;
+}
+span.time, span.categories {
+  color: #ADADAD;
+}
+h1, h2, h3 {
+  color: #696969;
+}
+
+a, a:link, a:active {
+  color: #3fa757;
+}
+a:hover {
+  color: #B3B3B3;
+}
+a:focus {
+  color: #a7443f;
+}
+
+/* Layout */
+.main-layout {
+  background: #fff;
+}
+
+/* Content */
+div.content pre {
+  background: #333333;
+  color: #FFF;
+}
+div.content .highlight {
+	background: #333333;
+}
+footer {
+  border-top: 1px solid #F7F1F1;
+  color: #C2C2C2;
+}
+
+/* Left column */
+div.col-sm-3 {
+  color: #666;
+}
+div.col-sm-3 strong {
+  color: #4A4A4A;
+}
+div.col-sm-3 div.profile-about {
+  color: #8C8C8C;
+}
+
+.social li a {
+  font-size: 16px;
+  color: #969394;
+}
+.social li a:hover {
+  color: #6D6D6D;
+}
+
+.share-page {
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+}

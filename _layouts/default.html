@@ -4,6 +4,16 @@ layout: compress
 <!DOCTYPE html>
 <html>
   <head>
+
+    <script>
+     if (localStorage.getItem("darkreader") == "enabled") {
+         document.getElementById("dark-reader").disabled = false;
+     } else {
+         document.getElementById("dark-reader").disabled = true;
+     }
+    </script>
+
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -88,17 +98,22 @@ layout: compress
     <!-- Font awesome icons -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     <!-- syntax highlighting CSS -->
-    <link rel="stylesheet" href="{{ site.baseurl }}/static/css/syntax.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/static/lightmode-css/syntax.css">
+    <link disabled id="dark-reader" rel="stylesheet" href="{{ site.baseurl }}/static/darkmode-css/syntax.css">
     <!-- Bootstrap core CSS -->
     <link href="{{ site.baseurl }}/static/css/bootstrap.min.css" rel="stylesheet">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300italic,300,400italic,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ site.baseurl }}/static/css/super-search.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}/static/css/thickbox.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}/static/css/projects.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}/static/css/main.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/static/lightmode-css/super-search.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/static/lightmode-css/thickbox.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/static/lightmode-css/projects.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/static/lightmode-css/main.css">
 
+    <link disabled id="dark-reader" rel="stylesheet" href="{{ site.baseurl }}/static/darkmode-css/super-search.css">
+    <link disabled id="dark-reader" rel="stylesheet" href="{{ site.baseurl }}/static/darkmode-css/thickbox.css">
+    <link disabled id="dark-reader" rel="stylesheet" href="{{ site.baseurl }}/static/darkmode-css/projects.css">
+    <link disabled id="dark-reader" rel="stylesheet" href="{{ site.baseurl }}/static/darkmode-css/main.css">
     {% if jekyll.environment == "production" %}
       <!-- Google Analytics -->
       <script>
@@ -123,19 +138,15 @@ layout: compress
               {{ site.about }}
             </div>
           {% endif %}
-          <div class="social">
-            <ul>
-              {% for link in site.social %}
-                <li><a href="{{ link.link }}" target="_blank"><i class="fa {{ link.icon }}"></i></a></li>
-              {% endfor %}
-            </ul>
-          </div>
+
           <div class="search" id="js-search">
             <input type="text" placeholder="(sitemap)~$ type to search" class="search__input form-control" id="js-search__input">
             <ul class="search__results" id="js-search__results"></ul>
           </div>
           <hr />
           <ul class="sidebar-nav">
+            <li><a href="javascript:void(0)" onclick="window.print();return false;">Print current page</a></li>
+            <li><a href="javascript:void(0)" onclick="dark_toggle();return false;" title="Toggle night mode">Toggle dark mode</a></li>
             <strong>Navigation</strong>
             <li><a href="{{ site.baseurl }}/">Home</a></li>
             {% for i in site.urls %}
@@ -152,9 +163,16 @@ layout: compress
           {% if site.github %}
             - <a href="{{ site.github }}">{{ site.github }}</a> - Powered by Jekyll.
           {% endif %}
-          <div class="btn-github" style="float:right;">
-            <iframe src="https://ghbtns.com/github-btn.html?user=agusmakmun&repo=agusmakmun.github.io&type=star&count=true" frameborder="0" scrolling="0" width="85" height="20px"></iframe>
-            <iframe src="https://ghbtns.com/github-btn.html?user=agusmakmun&repo=agusmakmun.github.io&type=fork&count=true" frameborder="0" scrolling="0" width="85" height="20px"></iframe>
+          <div style="float:right;">
+
+            <div class="social">
+              <ul>
+                {% for link in site.social %}
+                  <li><a href="{{ link.link }}" target="_blank"><i class="fa {{ link.icon }}"></i></a></li>
+                {% endfor %}
+              </ul>
+            </div>
+
           </div>
         </footer>
       </div>
@@ -170,5 +188,6 @@ layout: compress
     <script src="{{ site.baseurl }}/static/js/super-search.js"></script>
     <script src="{{ site.baseurl }}/static/js/thickbox-compressed.js"></script>
     <script src="{{ site.baseurl }}/static/js/projects.js"></script>
+    <script src="{{ site.baseurl }}/static/js/darkmode.js"></script>
   </body>
 </html>
