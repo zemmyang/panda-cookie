@@ -10,10 +10,11 @@ see later
 
 New features:
 * Fixed the baseurl issue from the original (done)
-* Dark mode toggle (in progress).
-* MathJax support (in progress)
-* Print content on page (in progress)
+* Dark mode toggle (done)
+* Print content on page (done)
 * Added jekyll-admin (access with http://localhost:4000/admin while running bundle exec jekyll serve)
+* MathJax support (use mathjax: true on YAML when posting)
+* Toggle comments on pages (use comments:true on YAML)
 
 From [agusmakmun.github.io](https://github.com/agusmakmun/agusmakmun.github.io):
 * Sitemap and XML Feed
